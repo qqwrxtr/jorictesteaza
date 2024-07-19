@@ -3,18 +3,20 @@ import './about.css'
 
 const About = () => {
   return (
-    <div className='text-center'>
-      <h1>About Me</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia,
-        metus vel efficitur vulputate, metus nibh semper nulla, non consequat
-        nibh ligula in lectus. Sed rutrum, augue id posuere malesuada, nunc
-        ex varius nisi, ac bibendum nisl nulla id nunc.
-      </p>
-      <img
-        src="https://via.placeholder.com/300x300"
-        alt="Profile Picture"
-      />
+    <div className='container text-center'>
+      <div className="row">
+        <div className="col-12">
+          <h1>About Me <b>Teodor</b></h1>
+          <p className='txt'>
+            Mai in scurt,azi incepem sa facem site-uri pe react,cu pricoale mari si frumoase,incercam sa il invatam ca sa avem salariu mare pe viitor iopta,sunt Teodor si invat React,si bagam si bootstrap in el
+          </p>
+          <img
+            className='img_profile'
+            src="https://riot-us.com/wp-content/uploads/2023/11/intro-1634607238.webp"
+            alt="Profile Picture"
+          />
+        </div>
+      </div>
     </div>
   );
 };

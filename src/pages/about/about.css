@@ -4,3 +4,14 @@
     align-items: center;
     justify-content: center;
 }
+
+.txt{
+    max-width: 900px;
+    width: 100%;
+}
+
+.igs img{
+    max-width: 32px;
+    width: 100%;
+    height: auto;
+}

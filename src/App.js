@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header/Header';
 import Home from './pages/home/Home'
 import About from './pages/about/About'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState, useEffect } from 'react';
+
+// App.js
 
 function App() {
   return (
@@ -11,8 +15,8 @@ function App() {
       <Router>
         <Header />
       <Routes>
-        <Route path="./pages/home/Home.jsx" element={<Home />} />
-        <Route path="./pages/about/About.jsx" element={<About />} />
+      <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
     </>
