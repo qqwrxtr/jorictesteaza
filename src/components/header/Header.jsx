@@ -1,26 +1,36 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './header.css'
+import './header.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// Header.jsx
 const Header = () => (
-    <div className="container mt-2">
-      <div className="row w-100 iopta">
-        <div className="col-4 w-30">
-          <h1>Teodor</h1>
-        </div>
-        <div className="col-8 w-70">
-          <ul className="">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-            <li><a href="#!">Whu zis?</a></li>
-            <li><a href="#!">Contact</a></li>
-          </ul>
-        </div>
+  <>
+  <nav className="navbar navbar-expand-lg jopcic px-5">
+      <Link className="navbar-brand" to="/">Teodor</Link>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <Link className="nav-link" to="/">Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/about">About</Link>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#!">Whu zis?</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#!">Contact</a>
+          </li>
+        </ul>
       </div>
-    </div>
-
+  </nav>
+  <div className="container">
+    <div className="hr"></div>
+  </div>
+  </>
 );
 
 export default Header;
